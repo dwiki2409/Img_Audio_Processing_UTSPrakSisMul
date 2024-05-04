@@ -98,7 +98,7 @@ function setupFileSelector() {
   compressButton.addEventListener('click', (event) => {
     event.preventDefault() // Prevent the form from submitting
     const files = fileInput.files
-    const targetSizeMb = 1
+    const targetSizeMb = 3
     if (isNaN(targetSizeMb) || targetSizeMb <= 0) {
       console.error('Invalid target size. Please enter a positive number.')
       return
